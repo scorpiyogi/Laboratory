@@ -19,6 +19,8 @@ const settings = {
 let s
 let scl = 20
 let food
+
+ 
 function preload() {}
 
 function setup() {
@@ -33,9 +35,12 @@ function setup() {
   ellipseMode(CENTER)
   textAlign(CENTER, CENTER)
   smooth()
+
   s = new Snake()
   frameRate(20)
   pickLocation()
+
+
 }
 function pickLocation() {
   let cols = floor(width / scl)
@@ -57,7 +62,8 @@ function keyPressed() {
 }
 
 function draw() {
-  background(102, 0, 0)
+  background(77,0,0)
+
 
   if (s.eat(food)) {
     pickLocation()

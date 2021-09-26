@@ -5,7 +5,7 @@ const settings = {
       width: 0,
       height: 0
     },
-    background: "#330000"
+    background: "#1a0000"
   }
 }
 
@@ -41,16 +41,26 @@ function draw() {
 
 
 
-  translate(650, 300)
+  translate(width/2, height/2)
   rotate(-90)
   let hr = hour()
   let mn = minute()
   let sc = second()
+  let ms= millis()
+
+  
 
   strokeWeight(8)
   stroke(255, 100, 150)
   noFill()
 
+
+  stroke(204, 0, 102)
+  let millisecondAngle = map(ms, 0 , 1000 , 0 ,360)
+  arc (0 , 0 , 320 ,320 , 0 ,millisecondAngle )
+
+
+stroke(255, 100, 150)
   let secondAngle = map(sc, 0, 59, 0, 360)
   arc( 0, 0, 300, 300, 0, secondAngle)
 
@@ -61,6 +71,13 @@ function draw() {
   stroke(150, 255, 100)
   let hourAngle = map(hr % 12, 0, 12, 0, 360)
   arc(0, 0, 260, 260, 0, hourAngle)
+
+
+ push()
+  rotate(millisecondAngle)
+  stroke(204, 0, 102)
+  line(0, 0, 125 , 0 )
+  pop()
 
   push()
   rotate(secondAngle)
@@ -79,6 +96,8 @@ function draw() {
   stroke(150, 255, 100)
   line(0, 0, 50,0)
   pop()
+
+ 
 
   stroke(255)
   point(0, 0)
