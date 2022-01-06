@@ -38,15 +38,15 @@ function nextpoint() {
   let nextY
 
   let r = random(1)
-  
 
-  if (r < 0.01) {
+
+  if (r < 0.05) {
     //1
     nextX = 0
     nextY = 0.16 * y
   } else if (r < 0.86) {
     //2
-    nextX = 0.85 * x + 0.04 * y 
+    nextX = 0.85 * x + 0.04 * y
     nextY = -0.04 * x + 0.85 * y + 1.6
   } else if (r < 0.93) {
     //3
