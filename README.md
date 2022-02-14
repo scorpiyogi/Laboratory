@@ -4,7 +4,7 @@ This repository contains my creative programming experiments.
 
 ---
 
-[Exp. 1](https://scorpiyogi.github.io/laboratory/1) : Cauliflower Fractal
+[Exp. 1](https://github.com/scorpiyogi/Laboratory.git/1) : Cauliflower Fractal
 
 [Exp. 2](https://scorpiyogi.github.io/laboratory/2) : Barnsley Fern
 
