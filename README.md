@@ -32,4 +32,10 @@ This repository contains my creative programming experiments.
 
 [Exp. 14](https://scorpiyogi.github.io/laboratory/14) : Wave Animation
 
-[Exp. 15](https://scorpiyogi.github.io/laboratory/14) :Mandlerbrot Set
+[Exp. 15](https://scorpiyogi.github.io/laboratory/15) : Mandlerbrot Set
+
+[Exp. 16](https://scorpiyogi.github.io/laboratory/16) : Sound Visualizer
+
+[Exp. 17](https://scorpiyogi.github.io/laboratory/17) : Torch
+
+[Exp. 18](https://scorpiyogi.github.io/laboratory/18) : Sine Waves
